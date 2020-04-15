@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    ```
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</head>
+
+<body style="background-color: #eee;">
+    <div class="container-fluid jumbotron">
+        <input type="button" class="btn btn-danger" value="Cancel Task" style="margin-left: 90%;">
+        <div class="row">
+            <div class="col-sm-5">
+                <h3 style="margin-left: 25px;">TASK SHEET #00462</h3>
+                <div class="form-group" style="margin-top: 50px;">
+                    <label class="control-label col-sm-3" for="email">Client Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter Client Name" name="pwd" />
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 50px;">
+                    <label class="control-label col-sm-3" for="email">Ship Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter Ship Name" name="pwd" />
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 50px;">
+                    <label class="control-label col-sm-3" for="email">Captain Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter Captain Name" name="pwd" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7" style="margin-top: 150px;">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <input type="button" class="btn btn-primary" value="RFQ" style="width: 150px;">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="button" class="btn btn-success" value="PO" style="width: 150px;">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="button" class="btn btn-warning" value="Invoices" style="width: 150px;">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="button" class="btn btn-info" value="Returns" style="width: 150px;">
+                    </div>
+                </div>
+                <div class="form-group" style="align-self: center;margin-top: 20px;margin-left: 25%;">
+                    <label class="control-label col-sm-3" for="email">Shipment Date:</label>
+                    <div class="col-sm-3">
+                        <input type="date" class="form-control" id="pwd" placeholder="Enter Shipment Date" name="pwd" />
+                    </div>
+                </div>
+                <br>
+                <div class="form-group" style="align-self: center;margin-top: 20px;margin-left: 35%;">
+                    <input type="checkbox" id="toggle-two" style="width: 10px;">
+                    <script>
+                        $(function () {
+                            $('#toggle-two').bootstrapToggle({
+                                on: 'Port Call',
+                                off: 'Ship Supply'
+                            });
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-7">
+            <div class="col-sm-4">
+                <input type="button" class="btn btn-primary" value="Confirm and Create RFQs" style="width: 220px;">
+            </div>
+            <div class="col-sm-4">
+                <input type="button" class="btn btn-warning" value="Confirm and Create Quotation" style="width: 220px;">
+            </div>
+            <div class="col-sm-4">
+                <input type="button" class="btn btn-success" value="Confirm and Create POs" style="width: 220px;">
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <img src="./tabel.PNG" alt="" srcset="" style="margin-top: 75px;">
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Extra Costs Incurred</h5>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <label class="control-label col-sm-4" for="email">Boat Charges:</label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$10.00" placeholder="Enter Ship Name" name="pwd" />
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 50px;">
+                        <label class="control-label col-sm-4" for="email">Cargo Handling:</label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$5.00" placeholder="Enter Captain Name"
+                                name="pwd" />
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 50px;">
+                        <label class="control-label col-sm-4" for="email"></label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$0.00" placeholder="Enter Captain Name"
+                                name="pwd" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Extra Costs additions</h5>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <label class="control-label col-sm-4" for="email">Service Charges</label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$5.00" placeholder="Enter Ship Name" name="pwd" />
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 50px;">
+                        <label class="control-label col-sm-4" for="email">Transport Charges</label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$10.00" placeholder="Enter Captain Name"
+                                name="pwd" />
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 50px;">
+                        <label class="control-label col-sm-4" for="email">Express Service</label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$12.00" placeholder="Enter Captain Name"
+                                name="pwd" />
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 50px;">
+                        <label class="control-label col-sm-4" for="email"></label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: right;" class="form-control" value="$0.00" placeholder="Enter Captain Name"
+                                name="pwd" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">                    
+                    <div class="form-group" style="margin-top: 10px;">
+                        <label class="control-label col-sm-4" for="email"><h4><b>Total Task Cost</b></h3></label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: center;border-bottom-width: 15;" class="form-control" value="$10.00" placeholder="Enter Ship Name" name="pwd" />
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div class="col-sm-6">                    
+                    <div class="form-group" style="margin-top: 10px;">
+                        <label class="control-label col-sm-4" for="email"><h4><b>Total Price</b></h3></label>
+                        <div class="col-sm-5">
+                            <input type="text" style="text-align: center;" class="form-control" value="$5.00" placeholder="Enter Ship Name" name="pwd" />
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            
+        </div>
+</body>
+
+</html>
